@@ -1,0 +1,14 @@
+{
+  "name": "package1",
+  "version": "0.1.0",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  },
+  "scripts": {
+    "pretest": "rm -rf dist && tsc",
+    "test": "node dist/test.js"
+  }
+}
